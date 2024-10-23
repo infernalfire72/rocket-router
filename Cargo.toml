@@ -1,0 +1,12 @@
+[package]
+name = "rocket-router"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+okapi = ["dep:rocket_okapi"]
+
+[dependencies]
+rocket = "^0.5.1"
+rocket_okapi = { git = "https://github.com/infernalfire72/okapi", branch = "bump-deps", optional = true }
